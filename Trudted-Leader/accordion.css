@@ -1,0 +1,39 @@
+button::after {
+    display: none;
+}
+button{
+    i {
+        font-size: 20px;
+        &.fa-circle-minus {
+            display: block;
+        }
+        &.fa-circle-plus {
+            display: none;
+        }
+    }
+    &.collapsed {
+        color: #57626f;
+        font-weight: 500;
+        i.fa-circle-minus {
+            display: none;
+
+        }
+        i.fa-circle-plus {
+            display: block;
+        }
+    }
+}
+.accordion-button:not(.collapsed) {
+    color: #168f66;
+    font-weight: 500;
+    background-color: white;
+}
+.col-lg-3 {
+    h1 {
+        font-size: 50px;
+    }
+}
+.ask-away {
+    background-color: #eaebef;
+    height: 100vh;
+}
